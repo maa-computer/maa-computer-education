@@ -1,0 +1,1053 @@
+/* ============================================
+   COURSE.CSS - Course Details Page (PREMIUM + ANIMATIONS)
+   ============================================ */
+
+/* ============================================
+   COURSE DETAILS PAGE
+   ============================================ */
+
+.course-details-page {
+    padding: 30px 0 50px;
+}
+
+.course-details-page .container {
+    max-width: 900px;
+}
+
+/* ============================================
+   COURSE HEADER - Premium
+   ============================================ */
+
+.course-header {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 35px 40px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary), var(--secondary-light), var(--secondary));
+    background-size: 200% 100%;
+    animation: headerGlow 3s ease-in-out infinite;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+@keyframes headerGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.course-header:hover::before {
+    opacity: 1;
+}
+
+.course-header:hover {
+    border-color: var(--secondary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.course-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.course-header h1 span {
+    color: var(--secondary);
+}
+
+.course-header .course-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 20px;
+}
+
+.course-header .course-subtitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+/* ============================================
+   COURSE INFO GRID - Premium
+   ============================================ */
+
+.course-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.course-info-item {
+    background: var(--bg-light);
+    padding: 20px 18px;
+    border-radius: var(--radius-sm);
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-info-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(232, 168, 56, 0.03), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.course-info-item:hover::before {
+    opacity: 1;
+}
+
+.course-info-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--secondary);
+}
+
+.course-info-item .info-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 6px;
+    transition: all 0.4s ease;
+}
+
+.course-info-item:hover .info-icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.course-info-item .info-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+.course-info-item .info-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-top: 2px;
+}
+
+/* ============================================
+   COURSE DESCRIPTION - Premium
+   ============================================ */
+
+.course-description {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 30px 35px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 5px solid var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.course-description::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 40%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(232, 168, 56, 0.03), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.course-description:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateX(6px);
+}
+
+.course-description h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-description p {
+    color: var(--text-gray);
+    line-height: 1.9;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================================
+   COURSE SYLLABUS - Premium
+   ============================================ */
+
+.course-syllabus {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 30px 35px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.course-syllabus:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.course-syllabus h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.syllabus-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+}
+
+.syllabus-list li {
+    padding: 12px 16px;
+    background: var(--bg-light);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.syllabus-list li:hover {
+    background: var(--secondary-light);
+    transform: translateX(6px) scale(1.02);
+    border-color: var(--secondary);
+    box-shadow: 0 4px 20px rgba(232, 168, 56, 0.1);
+}
+
+.syllabus-list li::before {
+    content: '📌';
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   DOCUMENTS & BENEFITS - Premium
+   ============================================ */
+
+.documents-section {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 30px 35px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.documents-section:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.documents-section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.documents-grid li {
+    padding: 12px 16px;
+    background: var(--bg-light);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.documents-grid li:hover {
+    background: var(--secondary-light);
+    transform: translateX(6px);
+    border-color: var(--secondary);
+}
+
+.documents-grid li::before {
+    content: '📄';
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   BENEFITS - Premium
+   ============================================ */
+
+.benefits-section {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 30px 35px;
+    box-shadow: var(--shadow);
+    margin-bottom: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefits-section:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+
+.benefits-section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.benefits-grid li {
+    padding: 12px 16px;
+    background: var(--bg-light);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.benefits-grid li:hover {
+    background: var(--secondary-light);
+    transform: translateX(6px);
+    border-color: var(--secondary);
+}
+
+.benefits-grid li::before {
+    content: '✅';
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* ============================================
+   ADMISSION SECTION - Premium
+   ============================================ */
+
+.admission-section {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 40px 45px;
+    box-shadow: var(--shadow);
+    margin-top: 35px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.admission-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary), var(--secondary-light), var(--secondary));
+    background-size: 200% 100%;
+    animation: headerGlow 3s ease-in-out infinite;
+}
+
+.admission-section:hover {
+    box-shadow: var(--shadow-hover);
+    border-color: rgba(232, 168, 56, 0.15);
+}
+
+.admission-section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.admission-section .admission-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+/* ============================================
+   ADMISSION FORM - Premium
+   ============================================ */
+
+.admission-form {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.admission-form .form-group {
+    margin-bottom: 18px;
+}
+
+.admission-form label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 6px;
+}
+
+.admission-form input,
+.admission-form textarea,
+.admission-form select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-family: var(--font-family);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.admission-form input:focus,
+.admission-form textarea:focus,
+.admission-form select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 4px rgba(232, 168, 56, 0.1);
+    transform: translateY(-2px);
+}
+
+.admission-form input.error,
+.admission-form textarea.error,
+.admission-form select.error {
+    border-color: #fc8181;
+    box-shadow: 0 0 0 4px rgba(252, 129, 129, 0.1);
+}
+
+.admission-form input.success,
+.admission-form textarea.success,
+.admission-form select.success {
+    border-color: #48bb78;
+    box-shadow: 0 0 0 4px rgba(72, 187, 120, 0.1);
+}
+
+.admission-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.admission-form .btn-primary {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.admission-form .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.admission-form .btn-primary:hover::before {
+    left: 100%;
+}
+
+.admission-form .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* ============================================
+   RELATED COURSES - Premium
+   ============================================ */
+
+.related-courses {
+    padding: 50px 0 20px;
+}
+
+.related-courses h2 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.related-courses .section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.related-card {
+    background: var(--bg-white);
+    padding: 24px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.related-card:nth-child(1) { animation-delay: 0.1s; }
+.related-card:nth-child(2) { animation-delay: 0.2s; }
+.related-card:nth-child(3) { animation-delay: 0.3s; }
+
+.related-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--secondary);
+}
+
+.related-card:active {
+    transform: scale(0.97);
+}
+
+.related-card .related-icon {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.related-card h3 {
+    font-size: 1.05rem;
+    color: var(--primary);
+    margin-bottom: 2px;
+}
+
+.related-card p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 6px;
+}
+
+.related-card .related-arrow {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.related-card:hover .related-arrow {
+    transform: translateX(8px) scale(1.2);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-header,
+.course-info-item,
+.course-description,
+.course-syllabus,
+.documents-section,
+.benefits-section,
+.admission-section {
+    animation: fadeIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.course-header { animation-delay: 0.05s; }
+.course-info-item:nth-child(1) { animation-delay: 0.1s; }
+.course-info-item:nth-child(2) { animation-delay: 0.15s; }
+.course-info-item:nth-child(3) { animation-delay: 0.2s; }
+.course-info-item:nth-child(4) { animation-delay: 0.25s; }
+.course-info-item:nth-child(5) { animation-delay: 0.3s; }
+.course-info-item:nth-child(6) { animation-delay: 0.35s; }
+.course-description { animation-delay: 0.4s; }
+.course-syllabus { animation-delay: 0.45s; }
+.documents-section { animation-delay: 0.5s; }
+.benefits-section { animation-delay: 0.55s; }
+.admission-section { animation-delay: 0.6s; }
+
+/* ============================================
+   DARK MODE - Course
+   ============================================ */
+
+body.dark-mode .course-header {
+    background: #1a1a2e;
+    border: 1px solid #2d2d44;
+}
+
+body.dark-mode .course-header:hover {
+    border-color: #818cf8;
+}
+
+body.dark-mode .course-header h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .course-header .course-subtitle {
+    color: #8888aa;
+}
+
+body.dark-mode .course-info-item {
+    background: #0f0f1a;
+    border-color: transparent;
+}
+
+body.dark-mode .course-info-item:hover {
+    border-color: #818cf8;
+}
+
+body.dark-mode .course-info-item .info-value {
+    color: #e0e0e0;
+}
+
+body.dark-mode .course-info-item .info-label {
+    color: #8888aa;
+}
+
+body.dark-mode .course-description {
+    background: #1a1a2e;
+    border-left-color: #818cf8;
+    border: 1px solid #2d2d44;
+    border-left-width: 5px;
+}
+
+body.dark-mode .course-description h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .course-description p {
+    color: #a0a0b0;
+}
+
+body.dark-mode .course-syllabus {
+    background: #1a1a2e;
+    border: 1px solid #2d2d44;
+}
+
+body.dark-mode .course-syllabus h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .syllabus-list li {
+    background: #0f0f1a;
+    color: #a0a0b0;
+}
+
+body.dark-mode .syllabus-list li:hover {
+    background: #2d2d44;
+    border-color: #818cf8;
+}
+
+body.dark-mode .documents-section {
+    background: #1a1a2e;
+    border: 1px solid #2d2d44;
+}
+
+body.dark-mode .documents-section h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .documents-grid li {
+    background: #0f0f1a;
+    color: #a0a0b0;
+}
+
+body.dark-mode .documents-grid li:hover {
+    background: #2d2d44;
+}
+
+body.dark-mode .benefits-section {
+    background: #1a1a2e;
+    border: 1px solid #2d2d44;
+}
+
+body.dark-mode .benefits-section h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .benefits-grid li {
+    background: #0f0f1a;
+    color: #a0a0b0;
+}
+
+body.dark-mode .benefits-grid li:hover {
+    background: #2d2d44;
+}
+
+body.dark-mode .admission-section {
+    background: #1a1a2e;
+    border: 1px solid #2d2d44;
+}
+
+body.dark-mode .admission-section h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .admission-section .admission-subtitle {
+    color: #8888aa;
+}
+
+body.dark-mode .admission-form input,
+body.dark-mode .admission-form textarea,
+body.dark-mode .admission-form select {
+    background: #0f0f1a;
+    border-color: #2d2d44;
+    color: #e0e0e0;
+}
+
+body.dark-mode .admission-form label {
+    color: #a0a0b0;
+}
+
+body.dark-mode .admission-form input:focus,
+body.dark-mode .admission-form textarea:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 4px rgba(129, 140, 248, 0.1);
+}
+
+body.dark-mode .related-card {
+    background: #1a1a2e;
+    border-color: #2d2d44;
+}
+
+body.dark-mode .related-card:hover {
+    border-color: #818cf8;
+}
+
+body.dark-mode .related-card h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .related-card p {
+    color: #8888aa;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .related-grid {
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .course-details-page {
+        padding: 16px 0 35px;
+    }
+    
+    .course-header {
+        padding: 24px 20px;
+    }
+    
+    .course-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .course-header .course-subtitle {
+        font-size: 0.95rem;
+        padding-left: 14px;
+    }
+    
+    .course-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+    
+    .course-info-item {
+        padding: 14px 12px;
+    }
+    
+    .course-info-item .info-value {
+        font-size: 0.95rem;
+    }
+    
+    .course-description,
+    .course-syllabus,
+    .documents-section,
+    .benefits-section {
+        padding: 20px 18px;
+    }
+    
+    .course-description h2,
+    .course-syllabus h2,
+    .documents-section h2,
+    .benefits-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .syllabus-list {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .admission-section {
+        padding: 24px 20px;
+    }
+    
+    .admission-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .related-grid {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-header {
+        padding: 18px 14px;
+    }
+    
+    .course-header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .course-header .course-subtitle {
+        font-size: 0.85rem;
+        padding-left: 10px;
+    }
+    
+    .course-info-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .course-info-item {
+        padding: 12px 10px;
+    }
+    
+    .course-info-item .info-icon {
+        font-size: 22px;
+    }
+    
+    .course-info-item .info-value {
+        font-size: 0.85rem;
+    }
+    
+    .course-description,
+    .course-syllabus,
+    .documents-section,
+    .benefits-section {
+        padding: 16px 14px;
+    }
+    
+    .course-description h2,
+    .course-syllabus h2,
+    .documents-section h2,
+    .benefits-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .syllabus-list li,
+    .documents-grid li,
+    .benefits-grid li {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+    
+    .admission-section {
+        padding: 18px 14px;
+    }
+    
+    .admission-section h2 {
+        font-size: 1.1rem;
+    }
+    
+    .admission-form input,
+    .admission-form textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .admission-form .btn-primary {
+        padding: 14px;
+        font-size: 1rem;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .course-header,
+    .course-info-item,
+    .course-description,
+    .course-syllabus,
+    .documents-section,
+    .benefits-section,
+    .admission-section,
+    .related-card {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    
+    .course-header::before {
+        animation: none !important;
+    }
+    
+    .admission-section::before {
+        animation: none !important;
+    }
+    
+    .course-info-item:hover,
+    .syllabus-list li:hover,
+    .documents-grid li:hover,
+    .benefits-grid li:hover,
+    .related-card:hover {
+        transform: none !important;
+    }
+}
+
+/* ============================================
+   PRINT
+   ============================================ */
+
+@media print {
+    .course-details-page {
+        padding: 0 !important;
+    }
+    
+    .course-header,
+    .course-description,
+    .course-syllabus,
+    .documents-section,
+    .benefits-section,
+    .admission-section {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .course-header::before,
+    .admission-section::before {
+        display: none !important;
+    }
+    
+    .course-info-item {
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+    }
+    
+    .admission-form .btn-primary {
+        border: 1px solid #000 !important;
+        background: none !important;
+        color: #000 !important;
+    }
+    
+    .admission-form .btn-primary::before {
+        display: none !important;
+    }
+    
+    .related-courses {
+        display: none !important;
+    }
+}

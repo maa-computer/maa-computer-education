@@ -1,0 +1,35 @@
+{
+  "id": "pgdca",
+  "name": "PGDCA",
+  "tagline": "Post Graduate Diploma in Computer Applications",
+  "fees": "₹12,000",
+  "duration": "6 Months",
+  "eligibility": "Graduate",
+  "certificate": "Yes",
+  "practicalClasses": "Yes",
+  "jobAssistance": "Yes",
+  "description": "PGDCA (Post Graduate Diploma in Computer Applications) is an advanced program for graduates who want to specialize in computer applications. This course provides in-depth knowledge of software development, database management, and IT systems.",
+  "syllabus": [
+    "Advanced Programming Concepts",
+    "Database Management Systems",
+    "Web Development",
+    "Software Engineering",
+    "Network Security",
+    "Data Structure & Algorithms",
+    "Project Work",
+    "Cloud Computing Basics"
+  ],
+  "documentsRequired": [
+    "Aadhar Card Copy",
+    "2 Passport Size Photos",
+    "Graduation Marksheet",
+    "Transfer Certificate"
+  ],
+  "benefits": [
+    "Post Graduate Diploma certification",
+    "Advanced skill development",
+    "Industry-oriented projects",
+    "100% job assistance",
+    "Higher salary prospects"
+  ]
+}

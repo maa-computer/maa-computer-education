@@ -1,0 +1,22 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "image": "assets/images/banners/banner1.jpg",
+      "title": "Maa Computer  Education",
+      "subtitle": "Best Computer Training Institute In Kalimela"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/banners/banner2.jpg",
+      "title": "New Batch Starting Soon",
+      "subtitle": "Enroll Now for 2026"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/banners/banner3.jpg",
+      "title": "100% Job Assistance",
+      "subtitle": "Get certified and get placed"
+    }
+  ]
+}

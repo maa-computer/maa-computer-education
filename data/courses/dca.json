@@ -1,0 +1,33 @@
+{
+  "id": "dca",
+  "name": "DCA",
+  "tagline": "Diploma in Computer Applications",
+  "fees": "₹6,000",
+  "duration": "3 Months",
+  "eligibility": "+2 Pass",
+  "certificate": "Yes",
+  "practicalClasses": "Yes",
+  "jobAssistance": "Yes",
+  "description": "DCA (Diploma in Computer Applications) is a comprehensive program that covers all aspects of computer applications. This diploma course is designed to provide both theoretical knowledge and practical skills needed for IT jobs.",
+  "syllabus": [
+    "Introduction to Computers",
+    "MS Office (Word, Excel, PowerPoint)",
+    "Internet & Web Technologies",
+    "Tally - Accounting Software",
+    "Typing & Data Entry",
+    "Computer Communication",
+    "Basics of Programming"
+  ],
+  "documentsRequired": [
+    "Aadhar Card Copy",
+    "2 Passport Size Photos",
+    "10th Marksheet",
+    "Transfer Certificate"
+  ],
+  "benefits": [
+    "Diploma certification",
+    "Practical training with live projects",
+    "Experienced faculty",
+    "Job placement support"
+  ]
+}

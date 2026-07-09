@@ -1,0 +1,32 @@
+{
+  "title": "📸 Best Moments",
+  "subtitle": "A glimpse of our institute's best moments",
+  "items": [
+    {
+      "type": "photo",
+      "image": "assets/images/moments/graduation.jpg",
+      "caption": "Annual Graduation Ceremony 2026",
+      "date": "March 2026"
+    },
+    {
+      "type": "photo",
+      "image": "assets/images/moments/workshop.jpg",
+      "caption": "Annual Meet",
+      "date": "March 2026"
+    },
+    {
+      "type": "video",
+      "videoUrl": "assets/videos/institute-tour.mp4",
+      "image": "assets/images/moments/thumbnail-1.jpg",
+      "title": "Student Success Stories",
+      "caption": "Hear from our successful students"
+    },
+    {
+      "type": "video",
+      "videoUrl": "assets/videos/student-success.mp4",
+      "image": "assets/images/moments/thumbnail-2.jpg",
+      "title": "Student Success Stories",
+      "caption": "Hear from our successful students"
+    }
+  ]
+}

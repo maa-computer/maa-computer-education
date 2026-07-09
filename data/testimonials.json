@@ -1,0 +1,39 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Subhankar Bairagi",
+      "course": "OS-CIT",
+      "rating": 5,
+      "comment": "Very good institute. The teachers are very supportive and the teaching method is excellent."
+    },
+    {
+      "id": 2,
+      "name": "Priya Ray",
+      "course": "DCA",
+      "rating": 5,
+      "comment": "Best computer training institute in Kalimela. I got job immediately after completing my course."
+    },
+    {
+      "id": 3,
+      "name": "Amit Mandal",
+      "course": "PGDCA",
+      "rating": 5,
+      "comment": "Great learning experience. Practical training and job assistance helped me a lot."
+    },
+    {
+      "id": 4,
+      "name": "Sneha Biswas",
+      "course": "OS-CIT-A+",
+      "rating": 5,
+      "comment": "I learned everything from basic to advanced. Now I can work on any computer-related job."
+    },
+    {
+      "id": 5,
+      "name": "Vikash Das",
+      "course": "NIELIT",
+      "rating": 5,
+      "comment": "Complete IT education. The syllabus is well-structured and covered all important topics."
+    }
+  ]
+}

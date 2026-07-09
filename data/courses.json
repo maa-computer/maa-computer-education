@@ -1,0 +1,85 @@
+{
+  "courses": [
+    {
+      "id": "oscit",
+      "name": "OS-CIT",
+      "fees": "₹4,000",
+      "duration": "3 Months",
+      "lessons": 50,
+      "image": "assets/images/courses/oscit.jpg",
+      "description": "Basic computer course covering fundamentals of computer and office applications."
+    },
+    {
+      "id": "oscit-a",
+      "name": "OS-CIT-A",
+      "fees": "₹9,000",
+      "duration": "6 Months",
+      "lessons": 100,
+      "image": "assets/images/courses/oscit-a.jpg",
+      "description": "Advanced computer course with in-depth knowledge of MS Office and internet."
+    },
+    {
+      "id": "oscit-a-plus",
+      "name": "OS-CIT-A+",
+      "fees": "₹19,000",
+      "duration": "12 Months",
+      "lessons": 200,
+      "image": "assets/images/courses/oscit-a+.jpg",
+      "description": "Complete computer course with advanced topics and practical training."
+    },
+    {
+      "id": "dca",
+      "name": "DCA",
+      "fees": "₹6,000",
+      "duration": "6 Months",
+      "lessons": 100,
+      "image": "assets/images/courses/dca.jpg",
+      "description": "Diploma in Computer Applications - Comprehensive computer education."
+    },
+    {
+      "id": "pgdca",
+      "name": "PGDCA",
+      "fees": "₹12,000",
+      "duration": "12 Months",
+      "lessons": 100,
+      "image": "assets/images/courses/pgdca.jpg",
+      "description": "Post Graduate Diploma in Computer Applications for advanced learners."
+    },
+    {
+      "id": "Coming Soon",
+      "name": "NIELIT (ACC)",
+      "fees": "₹5,000",
+      "duration": "3 Months",
+      "lessons": 50,
+      "image": "assets/images/courses/acc.jpg",
+      "description": "Advanced Diploma in Computer Applications - Complete IT education."
+    },
+    {
+      "id": "Coming Soon",
+      "name": "NIELIT (BCC)",
+      "fees": "₹5,000",
+      "duration": "3 Months",
+      "lessons": 50,
+      "image": "assets/images/courses/bcc.jpg",
+      "description": "Advanced Diploma in Computer Applications - Complete IT education."
+    },
+    {
+      "id": "Coming Soon",
+      "name": "NIELIT (CCC)",
+      "fees": "₹5,000",
+      "duration": "3 Months",
+      "lessons": 50,
+      "image": "assets/images/courses/ccc.jpg",
+      "description": "Advanced Diploma in Computer Applications - Complete IT education."
+    },
+    {
+      "id": "Coming Soon",
+      "name": "NIELIT (CCC+)",
+      "fees": "₹5,000",
+      "duration": "3 Months",
+      "lessons": 50,
+      "image": "assets/images/courses/ccc+.jpg",
+      "description": "Advanced Diploma in Computer Applications - Complete IT education."
+    }
+  ]
+}

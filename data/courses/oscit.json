@@ -1,0 +1,38 @@
+{
+  "id": "oscit",
+  "name": "OS-CIT",
+  "tagline": "Odisha State Certificate in Information Technology.",
+  "fees": "₹4000",
+  "duration": "3 Months / 144 hr",
+  "eligibility": "Class 10 Pass/Fail",
+  "certificate": "Yes",
+  "practicalClasses": "Yes",
+  "jobAssistance": "Yes",
+  "description": "Government of Odisha, under the Higher Education Department, and in collaboration with Maharashtra Knowledge Corporation Limited (MKCL), formed a Special Purpose Vehicle (SPV) named Odisha Knowledge Corporation Limited (OKCL) with one of the important objectives being State-wide IT Literacy Mission to bridge the Digital Divide in rural and semi-urban areas of Odisha through OS-CIT IT literacy computer course. Accordingly, Odisha Government published a resolution for OS-CIT which inter-alia, states that “the Government has taken a policy decision to launch State-wide Mass IT Literacy Mission in the form of launch of the Odisha State – Certificate in Information Technology (“OS-CIT”) course with effect from 2012 and the Course OS-CIT is recognized by the Government of Odisha under its Department of Higher Education as a de-facto standard IT Literacy Course for attaining basic knowledge of application of Information Technology.",
+  "syllabus": [
+    "Introduction to Computer & Smartphone",
+    "Computer & Voice Typing",
+    "Windows 10",
+    "Internet / Chrome",
+    "MS Word",
+    "MS Excel",
+    "MS PowerPoint",
+    "Outlook/Gmail",
+    "Office 365",
+    "Google Workspace",
+    "Mobile Apps",
+    "Coding"
+  ],
+  "documentsRequired": [
+    "Class 10 Marksheet & certificate",
+    "Aadhar Card Copy",
+    "3 Passport Size Photos",
+    "Mobile Number & Email"
+  ],
+  "benefits": [
+    "Learn from experienced trainers",
+    "Hands-on practical training",
+    "Certificate after completion",
+    "Job assistance support"
+  ]
+}

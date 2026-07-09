@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Developer Portfolio - Subhankar Bairagi">
+    <title>Developer - Subhankar Bairagi</title>
+    
+    <!-- ===== CSS FILES ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/developer.css">
+    
+    <link rel="icon" href="assets/images/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="main-header">
+    <div class="header-container">
+        <div class="header-row">
+            <div class="header-left">
+                <button class="back-btn visible" onclick="history.back()" aria-label="Go Back">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <a href="index.html" class="logo">
+                    <span class="logo-text">👨‍💻 Developer</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <button class="header-btn dark-toggle" id="darkToggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="developer-page">
+    <div class="container">
+        <!-- Loading State -->
+        <div id="developerLoader" class="loading">
+            <div class="spinner"></div>
+            <p>Loading developer profile...</p>
+        </div>
+        
+        <!-- Developer Card (will be populated by JS) -->
+        <div id="developerCard" class="developer-card" style="display:none;"></div>
+    </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="js/dark-mode.js"></script>
+<script src="js/developer.js"></script>
+
+<script>
+    // Load developer data when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof loadDeveloperData === 'function') {
+            loadDeveloperData();
+        } else {
+            // Fallback if developer.js not loaded
+            document.getElementById('developerLoader').style.display = 'none';
+            document.getElementById('developerCard').style.display = 'block';
+            document.getElementById('developerCard').innerHTML = `
+                <div class="dev-profile">
+                    <div class="dev-photo-placeholder">👨‍💻</div>
+                    <div class="dev-info">
+                        <h1>Subhankar Bairagi</h1>
+                        <div class="dev-title">Web Developer &amp; Designer</div>
+                        <div class="dev-tagline">Building beautiful &amp; functional websites</div>
+                    </div>
+                </div>
+                <div class="dev-stats">
+                    <div class="dev-stat"><div class="stat-number">3+</div><div class="stat-label">Years</div></div>
+                    <div class="dev-stat"><div class="stat-number">25</div><div class="stat-label">Projects</div></div>
+                    <div class="dev-stat"><div class="stat-number">15</div><div class="stat-label">Clients</div></div>
+                    <div class="dev-stat"><div class="stat-number">100%</div><div class="stat-label">Satisfaction</div></div>
+                </div>
+                <div class="dev-bio"><p>I am a passionate web developer with 3+ years of experience...</p></div>
+                <div class="dev-contact">
+                    <p>📞 +91-9777084142</p>
+                    <p>✉️ subhankarbairagi@gmail.com</p>
+                    <p>📍 Kalimela, Odisha</p>
+                </div>
+            `;
+        }
+    });
+</script>
+
+</body>
+</html>

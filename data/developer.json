@@ -1,0 +1,64 @@
+{
+  "developer": {
+    "name": "Subhankar Bairagi",
+    "title": "Web Developer & Designer",
+    "tagline": "Building beautiful & functional websites",
+    "bio": "I am a passionate web developer with 2+ years of experience in creating responsive, user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks. I love turning ideas into reality through code.",
+    "photo": "assets/images/banners/banner3.jpg",
+    "skills": [
+      { "name": "HTML5", "icon": "fab fa-html5", "color": "#E34F26" },
+      { "name": "CSS3", "icon": "fab fa-css3-alt", "color": "#1572B6" },
+      { "name": "JavaScript", "icon": "fab fa-js", "color": "#F7DF1E" },
+      { "name": "React", "icon": "fab fa-react", "color": "#61DAFB" },
+      { "name": "Node.js", "icon": "fab fa-node-js", "color": "#339933" },
+      { "name": "Python", "icon": "fab fa-python", "color": "#3776AB" }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "Study Notes Website",
+        "description": "Complete study notes platform for students",
+        "link": "index.html",
+        "status": "completed"
+      },
+      {
+        "id": 2,
+        "name": "Ma Computer Institute",
+        "description": "Professional computer training institute website",
+        "link": "index.html",
+        "status": "completed"
+      },
+      {
+        "id": 3,
+        "name": "Portfolio Builder",
+        "description": "Build your professional portfolio in minutes",
+        "link": "#",
+        "status": "upcoming"
+      }
+    ],
+    "social": {
+      "whatsapp": "https://wa.me/919777084142",
+      "telegram": "https://t.me/subhankarb",
+      "linkedin": "https://linkedin.com/in/subhankarb",
+      "github": "https://github.com/subhankarb",
+      "instagram": "https://instagram.com/subhankarb",
+      "youtube": "https://youtube.com/subhankarb"
+    },
+    "contact": {
+      "email": "subhankarbairagi@gmail.com",
+      "phone": "+91-9777084142",
+      "location": "Kalimela, Odisha, India"
+    },
+    "experience": {
+      "years": 3,
+      "projects": 25,
+      "clients": 15,
+      "satisfaction": "100%"
+    },
+    "qualifications": [
+      "B.Sc in Computer Science",
+      "Full Stack Web Development Certified",
+      "UI/UX Design Certified"
+    ]
+  }
+}
